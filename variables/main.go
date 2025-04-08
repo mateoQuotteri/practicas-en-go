@@ -1,12 +1,15 @@
 package main
 
 import (
-	"fmt"
-	"unsafe"
-	// "github.com/mateoQuotteri/practicas-en-go/functions/function"
+	//	"fmt"
+	//	"unsafe"
+	"github.com/mateoQuotteri/practicas-en-go/functions/function"
 )
 
 func main() {
+	var myIntVar int64 = 12
+	function.Display(myIntVar)
+
 	//var myIntVar int
 	//myIntVar = -12
 	//fmt.Println("Enter an integer:", myIntVar)
@@ -29,7 +32,7 @@ func main() {
 	//fmt.Println("Espacio en memoria de my8BitsUnitVar:", &my8BitsUnitVar)     // Imprime la dirección de memoria de la variable
 	//fmt.Println(unsafe.Sizeof(my8BitsUnitVar) * 8)                            // Imprime el tamaño de la variable en bytes
 
-	var my8BitsUintVar uint8 = 20
+	/*var my8BitsUintVar uint8 = 20
 	fmt.Printf("type: %T, value: %d, bytes: %d, bits: %d \n",
 		my8BitsUintVar,
 		my8BitsUintVar,
@@ -41,6 +44,6 @@ func main() {
 		unsafe.Sizeof(myFloat32Var), unsafe.Sizeof(myFloat32Var)*8)
 
 	var myStringVar string = "Hello, World!"
-	fmt.Printf("mi valor es: %s\n", myStringVar)
+	fmt.Printf("mi valor es: %s\n", myStringVar)*/
 
 }
