@@ -1,7 +1,7 @@
 package main
 
 import (
-	//	"fmt"
+	"fmt"
 	//	"unsafe"
 	"github.com/mateoQuotteri/practicas-en-go/functions/function"
 )
@@ -9,6 +9,9 @@ import (
 func main() {
 	var myIntVar int64 = 12
 	function.Display(myIntVar)
+
+	v := function.Add(2, 3)
+	fmt.Println("El resultado de la suma es:", v)
 
 	//var myIntVar int
 	//myIntVar = -12
