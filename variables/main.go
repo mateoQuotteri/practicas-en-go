@@ -7,11 +7,14 @@ import (
 )
 
 func main() {
-	var myIntVar int64 = 12
+	/*var myIntVar int64 = 12
 	function.Display(myIntVar)
 
 	v := function.Add(2, 3)
-	fmt.Println("El resultado de la suma es:", v)
+	fmt.Println("El resultado de la suma es:", v)*/
+
+	value, err := function.Calc(function.SUM, 20.12, 34)
+	fmt.Println("value: ", value, "- err: ", err)
 
 	//var myIntVar int
 	//myIntVar = -12
