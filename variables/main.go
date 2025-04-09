@@ -16,6 +16,14 @@ func main() {
 	value, err := function.Calc(function.SUM, 20.12, 34)
 	fmt.Println("value: ", value, "- err: ", err)
 
+	value, err = function.Calc(function.SUB, 20.12, 34)
+
+	xVal, yVal := function.Split(10)
+	fmt.Println("xVal:", xVal, "yVal:", yVal)
+
+	val45 := function.MSum(100, 200, 300, 400, 500)
+	fmt.Println("Suma se MSum:", val45)
+
 	//var myIntVar int
 	//myIntVar = -12
 	//fmt.Println("Enter an integer:", myIntVar)
