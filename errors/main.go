@@ -23,7 +23,7 @@ func main() {
 
 	//2da forma de crear un error
 	err2 := fmt.Errorf("Este es otro error: %w", err) // %w permite envolver errores
-	fmt.Println(err2)     */
+	fmt.Println(err2)
 
 	//3ra forma de crear un error
 	erro3 := testError(2)
@@ -37,6 +37,21 @@ func main() {
 	// Comprobando si un erro5 contiene erro3
 
 	fmt.Println(errors.Is(err5, erro3)) // Imprime el error combinado
+	*/
+
+	//el defer debe estar arriba de cualquier error que pueda aparecer
+	defer func() {
+		fmt.Println("Fin del programa")
+		r := recover() // Recupera el pánico
+		if r != nil {
+			fmt.Println("Se produjo un error:", r)
+		}
+	}()
+	//v := 0
+	//_ = 5 / v
+
+	panic("Se produjo un pánico") // Genera un pánico
+	fmt.Println("Fin del programa principal")
 
 }
 
