@@ -40,15 +40,6 @@ func main() {
 	*/
 
 	//el defer debe estar arriba de cualquier error que pueda aparecer
-	defer func() {
-		fmt.Println("Fin del programa")
-		r := recover() // Recupera el pánico
-		if r != nil {
-			fmt.Println("Se produjo un error:", r)
-		}
-	}()
-	//v := 0
-	//_ = 5 / v
 
 	panic("Se produjo un pánico") // Genera un pánico
 	fmt.Println("Fin del programa principal")
